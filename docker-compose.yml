@@ -1,0 +1,36 @@
+version: "3"
+
+services:
+  survaider_backend:
+    container_name: survaider
+    build: ./
+    # command: python manage.py runserver 0.0.0.0:8000
+    command: "bash -c 'python src/manage.py makemigrations --no-input && python src/manage.py migrate --no-input && python src/manage.py runserver 0.0.0.0:8000'"
+    working_dir: /usr/src/survaider_backend
+    environment:
+      REDIS_URI: redis://redis:6379
+      MONGO_URI: mongodb://survaider:27017
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./:/usr/src/survaider_backend
+    links:
+      - redis
+      - mongo
+
+
+  #redis
+  redis:
+    image: redis
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+    ports:
+      - "6379:6379"
+
+  mongo:
+    image: mongo
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./mongo:/data/db
