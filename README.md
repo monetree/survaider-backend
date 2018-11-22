@@ -2,7 +2,7 @@
 
 `first Clone the repo`
 
-`Way one using Docker`
+`-----------------------------------------Way one using Docker----------------------------------------`
 
 ## install docker
 
@@ -30,10 +30,10 @@
 Now run command `sudo docker-compose up --build` to start project by getting inside root directory
 
 
-`Way two without using docker`
+`------------------------------------------------Way two without using docker--------------------------------------`
 
 1. create your database as per settings.py 
-2. uncomment the commented database and vice versa
+2. uncomment the commented database and comment the uncommented database
 3. get into root directory.
 4. `cd pipenv`
 5. `pipenv shell`
