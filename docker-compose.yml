@@ -29,6 +29,7 @@ services:
 
   mongo:
     image: mongo
+    build: ./
     restart: always
     ports:
       - "27017:27017"
