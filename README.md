@@ -20,6 +20,7 @@
    stable"`
 6. `sudo apt-get update`
 7. `sudo apt-get install docker-ce`
+8 . open `http://127.0.0.1:8000/` in your browser
    
  ## install docker-compose
    
@@ -38,6 +39,7 @@ Now run command `sudo docker-compose up --build` to start project by getting ins
 5. `pipenv shell`
 6. `cd..`
 7.  `python manage.py runserver'
+8  open `http://127.0.0.1:8000/` in your browser
 
 
 `Still having issue??`
