@@ -24,4 +24,4 @@
 1. `sudo curl -L "https://github.com/docker/compose/releases/download/1.23.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose`
 2. `sudo chmod +x /usr/local/bin/docker-compose`
 
-Now run comman `sudo docker-compose up --build` to start project
+Now run command `sudo docker-compose up --build` to start project by getting inside root directory
