@@ -1,6 +1,8 @@
 # survaider-backend
 
-`Clone the repo`
+`first Clone the repo`
+
+`Way one using Docker`
 
 ## install docker
 
@@ -25,3 +27,20 @@
 2. `sudo chmod +x /usr/local/bin/docker-compose`
 
 Now run command `sudo docker-compose up --build` to start project by getting inside root directory
+
+
+`Way two without using docker`
+
+1. create your database as per settings.py 
+2. uncomment the commented database and vice versa
+3. get into root directory.
+4. `cd pipenv`
+5. `pipenv shell`
+6. `cd..`
+7.  `python manage.py runserver'
+
+
+`Still having issue??`
+please check this video below
+
+
