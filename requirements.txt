@@ -4,7 +4,7 @@ celery==4.1.1
 dataclasses==0.6
 Django==2.1.3
 django-cors-headers==2.4.0
-djongo==1.2.30
+djongo
 kombu==4.2.1
 pymongo==3.7.2
 pytz==2018.7
