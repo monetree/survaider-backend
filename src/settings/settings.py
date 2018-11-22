@@ -102,6 +102,12 @@ DATABASES = {
     }
 }
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'djongo',
+#         'NAME': 'survaider',
+#     }
+# }
 
 
 # Password validation
