@@ -17,4 +17,7 @@ Note: `install mongodb and python version 3.6 if you don't have`
 
 Note: `You don't need to install requirements.txt i have shared pipenv because it is slim as compared to virtualenv .
 and in frontend i have used reactjs but, you don't need to shart fronend server i have done it with one server bt integrating build of reactjs with django`
+
+App scrrenshot..
+
 ![](https://github.com/monetree/survaider-backend/blob/master/scrren.png)
