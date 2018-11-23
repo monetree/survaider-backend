@@ -11,7 +11,7 @@ Note: `install mongodb and python version 3.6 if you don't have`
 4. `cd pipenv`
 5. `pipenv shell`
 6. `cd ..`
-7. `python src/manage.py migrate`
+7. `python src/manage.py migrate `
 8. `python src/manage.py runserver'
 9. open `http://127.0.0.1:8000/` in your browser
 
