@@ -7,9 +7,7 @@ Note: `install mongodb and python version 3.6 if you don't have`
 `first clone the repo and get inside the cloned directory`
 1. open mongo shell `use suvaider` to create database
 2. open terminal and type `mongoimport -d suvaider -c adult --type csv --file adult.data.csv --headerline` to import database
-3. `pip install pipenv`
-4. `cd pipenv`
-5. `pipenv shell`
+3. `pip install pipenv && cd pipenv && pipenv shell`
 6. `cd ..`
 7. `python src/manage.py migrate `
 7. `python src/manage.py runserver `
