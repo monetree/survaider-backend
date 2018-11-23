@@ -1,6 +1,7 @@
 # survaider-backend
 
 `first Clone the repo`
+mongoimport -d survaider -c adult --type csv --file adult.data.csv --headerline
 
 `-----------------------------------------Way one using Docker----------------------------------------`
 
