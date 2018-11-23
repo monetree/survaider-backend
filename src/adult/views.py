@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import JsonResponse
 import pymongo
 
-myclient = pymongo.MongoClient("mongodb://mongo:27017/")
+myclient = pymongo.MongoClient("mongodb://localhost:27017/")
 mydb = myclient["survaider"]
 
 

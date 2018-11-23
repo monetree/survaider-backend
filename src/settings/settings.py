@@ -93,21 +93,21 @@ WSGI_APPLICATION = 'settings.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'survaider',
-        'PORT': 27017,
-        'HOST': 'mongo'
-    }
-}
-
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'djongo',
 #         'NAME': 'survaider',
+#         'PORT': 27017,
+#         'HOST': 'mongo'
 #     }
 # }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'djongo',
+        'NAME': 'survaider',
+    }
+}
 
 
 # Password validation
