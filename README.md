@@ -1,14 +1,15 @@
 ## suvaider - > Follow the steps to start
 
-1. create your database as per settings.py
-2. uncomment the commented database and comment the uncommented database
-3. get into root directory.
-4. `cd pipenv`
-5. `pipenv shell`
-6. `cd..`
-7.  `python manage.py runserver'
-8  open `http://127.0.0.1:8000/` in your browser
+Note: `install mongodb and python version 3.6 if you don't have`
 
+  `then`
 
-`Still having issue??`
-please check this video below
+`first clone the repo and get inside the cloned directory`
+1. open mongo shell `use suvaider` to create database
+2. open terminal and type `mongoimport -d suvaider -c adult --type csv --file adult.data.csv --headerline` to import database
+3. `cd pipenv`
+4. `pipenv shell`
+5. `cd ..`
+6. `python src/manage.py migrate`
+7. `python src/manage.py runserver'
+8. open `http://127.0.0.1:8000/` in your browser
